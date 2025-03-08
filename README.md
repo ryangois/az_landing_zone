@@ -1,7 +1,23 @@
 <h1 align=center>Azure Landing Zone</h1>
 
 This repository provides a **reference implementation** of an [Azure landing zone](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone) using Terraform. It aligns with the core concepts, **design principles**, and **conceptual architecture** described in Microsoft’s guidance on Azure landing zones. The Terraform code in this repository creates a **platform landing zone** environment (management groups, subscriptions, policies, and shared services) and can be extended to **application landing zones** for hosting workloads.
+> [!WARNING]  
+> This example is a starting skeleton. An enterprise‐scale landing zone typically includes many more policies (e.g., security baselines, log collection, blueprint definitions, etc.), peering, firewall, PIM, and so on. Customize and expand as needed.
+</br> 
 
+> [!IMPORTANT]  
+>Creating subscriptions with Terraform requires special permissions (usually an Enrollment Account or specific roles). In many organizations, subscriptions already exist, and you only “move” them under management groups. Therefore, in this code you will see two approaches:
+   >- **Approach A** (Recommended in many real scenarios): Reference existing subscriptions by ID (you pass them in as variables).
+   >- **Approach B** (Optional): Use azurerm_subscription resources to create new subscriptions (requires an enrollment account).
+>   
+> You can pick whichever approach applies to your environment.
+</br>
+
+> [!NOTE]  
+> Tenant Root Group is a special built‐in management group in Azure. You cannot rename it or create it. Terraform can only reference it.
+> 
+> Azure AD (users, groups, roles) typically uses the azuread provider, not azurerm. This code does not create Azure AD objects but shows placeholders where you might integrate them.
+> 
 ---
 
 ## What is an Azure Landing Zone?
