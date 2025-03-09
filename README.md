@@ -22,6 +22,9 @@ This repository provides a **reference implementation** of an [Azure landing zon
 
 ## What is an Azure Landing Zone?
 
+![image](https://github.com/user-attachments/assets/93762428-865f-48c9-836b-112f1876b538)
+
+
 An **Azure landing zone** is an environment in Azure that follows **key design principles** across eight design areas:
 
 1. **Azure billing and Microsoft Entra tenant**  
@@ -197,8 +200,7 @@ If you prefer a more **modular**, **verified** approach, you can also use [Azure
    Landing zones evolve over time as new requirements emerge. Continually refine your management group hierarchy, policies, and network topologies.  
 4. **Consult Documentation**  
    - [Azure Landing Zone Design Principles](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-principles)  
-   - [Azure Landing Zone Architecture](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/architecture)  
-   - [Journey to the target architecture](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/journey)
+   - [Azure Landing Zone Architecture]([https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/architecture](https://learn.microsoft.com/pt-br/azure/cloud-adoption-framework/ready/landing-zone/))  
 
 ---
 
